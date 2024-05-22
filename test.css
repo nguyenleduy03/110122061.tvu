@@ -1,0 +1,79 @@
+
+    
+    
+/* Định dạng chung cho footer */
+footer {
+    position: relative;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #d16767;
+    color: rgb(247, 253, 253);
+    padding: 20px 0;
+}
+
+/* Định dạng cho phần container */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Định dạng cho phần liên kết và liên hệ */
+.footer-section {
+    flex: 1; /* Chia đều chiều rộng giữa hai phần */
+    margin-right: 20px;
+    text-align: center;
+   
+}
+
+/* Định dạng cho phần liên kết */
+.nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav-link {
+    color: rgb(247, 253, 253);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #ffd700;
+}
+
+/* Định dạng cho phần liên hệ */
+.text-md-right {
+    margin-left: 20px;
+    text-align: center;
+}
+
+/* Định dạng cho biểu tượng mạng xã hội */
+.social-icons {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.social-icons a img {
+    width: 30px;
+    height: auto;
+    margin-left: 10px; /* Khoảng cách giữa các biểu tượng */
+    
+}
+
+/* Định dạng cho đường kẻ phân tách */
+.divider {
+    border-left: 1px solid #fff;
+    height: 40px; /* Chiều cao tùy chỉnh */
+    margin: 0 20px; /* Khoảng cách với hai phần khác */
+    left: 50%;
+}

@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Định dạng header */
+header {
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Định dạng main content */
+main {
+    padding: 20px 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Định dạng footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 10px 0;
+}

@@ -1,0 +1,94 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+#container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen đục với độ mờ 50% */
+}
+
+
+/* Định dạng cho phần header */
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Chuyển sang layout dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    height: 30vh; /* Sử dụng chiều cao dạng viewport height */
+    z-index: 1;
+    margin-bottom: 10%;
+   
+}
+
+header img {
+    width: auto;
+    height: 30%; /* Sử dụng chiều cao tương đối cho logo */
+    margin-bottom: 10px; /* Khoảng cách giữa logo và văn bản */
+}
+
+.content {
+   
+    color: #fff;
+    text-align: center; /* Căn giữa theo chiều ngang */
+}
+.content h1{
+    margin-bottom: -15px;
+}
+
+/* filedset*/
+fieldset{
+    
+    margin: 0 auto;
+    
+    display:flex;
+    flex-direction: column; /* Chuyển sang layout dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    height: 15%;
+    width: 30%;
+    color: #fff;
+}
+#wc-message{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    
+}
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
