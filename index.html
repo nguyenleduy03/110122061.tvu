@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <!--link font chữ gg-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--link liên file css-->
+    <link rel="stylesheet" href="style.css">
+    <title>Đănh Nhập & Đăng Ký IHGN</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>INGN</p>
+        </div>
+      
+        <div class="nav-button">
+        <button class="btn" id="registerBtn" onclick="register()">Đăng Ký</button>
+            <button class="btn white-btn" id="loginBtn" onclick="login()"><a href="header.php">Đăng nhập</a></button>
+            
+            
+        </div>
+    </nav>
+    
+<!-----------------------------Khung Form ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- Form Đăng Nhập -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="intro">Hãy đăng nhập để lưu lại kĩ niệm</div>
+            <div class="top">
+                <span>Bạn chưa có tài khoản <a href="#" onclick="register()">Đăng ký ngay</a></span>
+                <header>Đăng nhập</header>
+            </div>
+            <form action="login.php" method="post">
+            <div class="input-box">
+            <label for="tendangnhap">Tên đăng nhập:</label>
+                <input type="text" class="input-field" id="tendangnhap" placeholder="Tên đăng nhập hoặc email"  name="username" required>>
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+            <label for="matkhau">Mật khẩu</label>
+                <input type="password" class="input-field" id="matkhau" placeholder="Mật khẩu" name="password" required>
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Đăng Nhập">
+            </div>
+            </form>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Ghi Nhớ Tôi</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Bạn quên mật khẩu ?</a></label>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!------------------- form Đăng Ký -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <div class="intro">Chào mừng bạn đến với<br>IHGN</div>
+                <span>Bạn đã có tài khoản <a href="#" onclick="login()">Đăng nhập</a></span>
+                <header>Đăng Ký</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Họ của bạn">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Tên của bạn">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" placeholder="Địa chỉ Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" placeholder="tạo mật khẩu">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Đăng kí ngay">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check">Ghi Nhớ tôi</label>
+                </div>
+                <div class="two">
+                    <label><a href="#"></a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+
+
+<!---------------------------Javacript------------------------>>
+<script>
+   
+    function myMenuFunction() {
+     var i = document.getElementById("navMenu");
+     if(i.className === "nav-menu") {
+         i.className += " responsive";
+     } else {
+         i.className = "nav-menu";
+     }
+    }
+  
+ </script>
+ <script>
+     var a = document.getElementById("loginBtn");
+     var b = document.getElementById("registerBtn");
+     var x = document.getElementById("login");
+     var y = document.getElementById("register");
+     function login() {
+         x.style.left = "4px";
+         y.style.right = "-520px";
+         a.className += " white-btn";
+         b.className = "btn";
+         x.style.opacity = 1;
+         y.style.opacity = 0;
+     }
+     function register() {
+         x.style.left = "-510px";
+         y.style.right = "5px";
+         a.className = "btn";
+         b.className += " white-btn";
+         x.style.opacity = 0;
+         y.style.opacity = 1;
+     }
+ </script>
+ </body>
+ 
+ </html>
